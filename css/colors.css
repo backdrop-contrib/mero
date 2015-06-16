@@ -1,0 +1,74 @@
+
+/* ---------- Color Module Styles ----------- */
+
+body {
+  color: #2a320d;
+}
+h1, h2 {
+  color: #2a320d;
+}
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+.l-container {
+  background: #ffffff;
+}
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.l-header, .header, header {
+  color: #2a320d;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcb316;
+}
+.l-sidebar, .radix-layouts-sidebar {
+  background-color: #a7c629;
+  padding: 3em !important;
+}
+.l-content, .radix-layouts-content {
+  border-left: 1px solid #dcb316;
+  background-color: #f4ca16;
+}
+.sidebar a,
+.l-sidebar a,
+.radix-layouts-sidebar a {
+  color: #2a320d;
+}
+a {
+  color: #2a320d;
+}
+a:hover,
+a:focus {
+  color: #555555;
+}
+a:active {
+  color: #23aeff;
+}
+.l-sidebar .block {
+  background: none;
+  border:none;
+}
+.l-footer-wrapper,
+.l-footer {
+  background: #292929;
+}
+.l-header a,
+.header a,
+.l-footer-wrapper,
+.l-footer {
+  color: #2a320d;
+}
+main {
+  border-left: 1px solid #dcb316;
+}
+main, .l-container {
+  background-color: #a7c629;
+}
+article {
+  background-color: #ffffff;
+  border: 1px solid #dcb316;
+}
