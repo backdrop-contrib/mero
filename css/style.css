@@ -345,6 +345,9 @@ ul.tips {
 .container {
   width:100% !important;
 }
+.layout .l-content, .layout .l-sidebar {
+    padding: 15px;
+}
 main {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -648,6 +651,9 @@ main {
   margin-top: 20px;
   margin-bottom: 0px;
 }
+article.profile {
+  padding: 15px;
+}
 
 /* ----------------- Top ----------------- */
 
@@ -661,13 +667,12 @@ main {
   margin-top: 10px;
 }
 h1#page-title {
-  font-size: 2em;
+  font-size: 1.4em;
   line-height: 1;
-  margin: 2em;
 }
 main h2 {
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 1.4em;
   line-height: 1.4;
 }
 .node .content {
@@ -767,12 +772,11 @@ article .link-wrapper ul.links {
   border-right: 1px solid #fff4f4;
 }
 .article-content-wrapper {
-  padding: 2em 4em;
+  padding: 15px;
 }
 article {
   background-color: #fff;
   border: 1px solid #dcb316;
-  margin: 4em;
   max-width: 800px;
 }
 .top-image img {
@@ -1128,7 +1132,6 @@ footer ul.inline li {
   margin: 0;
   overflow: hidden;
   border: none;
-  background: transparent url(../images/tabs-border.png) repeat-x left bottom;
 }
 .tabs ul.primary li {
   display: block;
@@ -1141,7 +1144,7 @@ footer ul.inline li {
   float: right;
 }
 .tabs ul.primary li.active a {
-  border-bottom: 1px solid #ffffff;
+  border: none;
 }
 .tabs ul.primary li a {
   color: #000;
@@ -1151,13 +1154,8 @@ footer ul.inline li {
   display: block;
   font-size: 0.929em;
   float: left; /* not LTR */
-  padding: 0 10px 3px;
+  padding: 0 20px 3px;
   margin: 0;
-  text-shadow: 0 1px 0 #fff;
-  -moz-border-radius-topleft: 6px;
-  border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  border-top-right-radius: 6px;
 }
 .tabs ul.primary li.active a {
   background-color: #ffffff;
@@ -1197,7 +1195,6 @@ footer ul.inline li {
 ul.action-links {
   list-style: none;
   margin: 5px;
-  padding: 0.5em 1em;
 }
 ul.action-links li {
   display: inline-block;
@@ -1311,28 +1308,19 @@ fieldset.collapsed {
   border-radius: 0;
 }
 fieldset legend {
-  background: #dbdbdb;
-  border: 1px solid #ccc;
-  border-bottom: none;
+  background: #fff;
   color: #3b3b3b;
   display: block;
   height: 2em;
-  left: -1px; /* LTR */
   font-family: "Noto Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;  line-height: 2;
   padding: 0;
   position: absolute;
   text-indent: 10px;
-  text-shadow: 0 1px 0 #fff;
   top: -12px;
   width: 100%;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
 }
 fieldset.collapsed legend {
   -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 fieldset legend a {
   color: #3b3b3b;
@@ -1495,27 +1483,6 @@ input.form-button-disabled:active,
 }
 .comment-form input.form-file {
   width: auto;
-}
-.no-sidebars .comment-form .form-text {
-  width: 800px;
-}
-.one-sidebar .comment-form .form-text {
-  width: 500px;
-}
-.two-sidebars .comment-form .form-text {
-  width: 320px;
-}
-.comment-form .form-item .description {
-  font-size: 0.786em;
-  line-height: 1.2;
-  margin-left: 120px; /* LTR */
-}
-[dir="rtl"] .comment-form .form-item .description {
-  margin-left: 0;
-  margin-right: 120px;
-}
-h2.comment-form {
-  margin-bottom: 0.5em;
 }
 .comment-form .form-textarea {
   -moz-border-radius-topleft: 4px;
@@ -1681,6 +1648,19 @@ div.admin-panel .description {
   background-color: white;
 }
 
+/* ---------- Forum module ----------- */
+#forum {
+  background-color: #fff;    
+  max-width: 800px;
+  border: 1px solid #dcb316;
+}
+ul.action-links{
+    padding: 0;
+}
+ul.action-links li {
+    margin-left: 0;
+}
+
 /**
  * Responsive tables.
  */
@@ -1692,9 +1672,49 @@ div.admin-panel .description {
     display: none;
   }
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:450px) {
   th.priority-low,
-  td.priority-low {
+  td.priority-low,
+  th.priority-medium,
+  td.priority-medium {
     display: none;
+  }
+}
+@media screen and (min-width:851px) {
+  .l-container {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display:flex;
+  }
+  .l-sidebar, .radix-layouts-sidebar {
+    background-color: #a7c629;
+    padding: 3em !important;
+  }
+  article {
+    margin: 4em;
+  }
+  .article-content-wrapper {
+    padding: 2em 4em;
+  }
+  main h2 {
+    font-size: 2em;
+  }
+  article.profile {
+    margin: 4em;
+    padding: 2em 4em;
+  }
+  #forum {
+    margin: 4em;
+    padding: 2em 4em;
+    max-width: 800px;
+    border: 1px solid #dcb316;
+  }
+  ul.action-links {
+    margin: 4em;
+  }
+  h1#page-title {
+    font-size: 2em;
+    line-height: 1;
+    margin: 2em;
   }
 }

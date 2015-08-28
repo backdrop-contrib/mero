@@ -18,7 +18,6 @@ h1, h2 {
 }
 .tabs ul.primary li.active a {
   background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
 }
 .l-header, .header, header {
   color: #2a320d;
@@ -27,7 +26,6 @@ h1, h2 {
 }
 .l-sidebar, .radix-layouts-sidebar {
   background-color: #a7c629;
-  padding: 3em !important;
 }
 .l-content, .radix-layouts-content {
   border-left: 1px solid #dcb316;
@@ -70,5 +68,9 @@ main, .l-container {
 }
 article {
   background-color: #ffffff;
+  border: 1px solid #dcb316;
+}
+#forum {
+  background-color: #fff;    
   border: 1px solid #dcb316;
 }
