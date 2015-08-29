@@ -415,11 +415,8 @@ main {
   font-style: italic;
 }
 /* Region header blocks. */
-.header .block::after, .l-header .block::after {
-  clear: both;
-  content: "";
-  display: table;
-  margin: 1em;
+.header .block, .l-header .block {
+  padding: 15px 0;
 }
 .header .block .content,
 .l-header .block .content {
@@ -648,8 +645,8 @@ main {
 /* ------------------- Main ------------------- */
 
 .l-container {
-  margin-top: 20px;
   margin-bottom: 0px;
+  border-top: 1px solid #cccccc;
 }
 article.profile {
   padding: 15px;
@@ -658,7 +655,9 @@ article.profile {
 /* ----------------- Top ----------------- */
 
 .l-top {
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #cccccc;
 }
 
 /* ----------------- Content ------------------ */
@@ -1682,9 +1681,7 @@ ul.action-links li {
 }
 @media screen and (min-width:851px) {
   .l-container {
-    margin-top: 20px;
     margin-bottom: 0px;
-    display:flex;
   }
   .l-sidebar, .radix-layouts-sidebar {
     background-color: #a7c629;
@@ -1716,5 +1713,11 @@ ul.action-links li {
     font-size: 2em;
     line-height: 1;
     margin: 2em;
+  }
+  .l-header-inner {
+    padding-left: 5em;
+  }
+  .l-top {
+    padding-left: 5em;
   }
 }

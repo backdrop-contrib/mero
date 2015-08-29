@@ -27,9 +27,9 @@ $info = array(
         'article' => '#ffffff',
         'articleborder' => '#dcb316',
         'footer' => '#292929',
-        'titleslogan' => '#fffeff',
+        'titleslogan' => '#2a320c',
         'text' => '#2a320d',
-        'link' => '#2a320d',
+        'link' => '#2a320e',
       ),
     ),
     'thisyear' => array(

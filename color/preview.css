@@ -21,6 +21,7 @@
   overflow: hidden;
   word-wrap: break-word;
   margin-bottom: 10px;
+  border: 1px solid #eee;
 }
 #preview-header {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,13 +32,13 @@
   font-weight: normal;
   font-size: 1.821em;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-left: 15px;
   padding-top: 34px;
 }
 #preview-main-menu {
   clear: both;
-  padding: 0 15px 3px;
+  padding: 5px 2px;
 }
 #preview-main-menu-links a {
   color: #d9d9d9;
@@ -50,22 +51,6 @@
 }
 #preview-main-menu-links a {
   color: #333;
-  background: #ccc;
-  background: rgba(255, 255, 255, 0.7);
-  text-shadow: 0 1px #eee;
-  -moz-border-radius-topleft: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  border-top-right-radius: 8px;
-}
-#preview-main-menu-links a:hover,
-#preview-main-menu-links a:focus {
-  background: #fff;
-  background: rgba(255, 255, 255, 0.95);
-}
-#preview-main-menu-links a:active {
-  background: #b3b3b3;
-  background: rgba(255, 255, 255, 1);
 }
 #preview-main-menu-links li a.active {
   border-bottom: none;
@@ -82,26 +67,28 @@
   position: relative;
 }
 #preview-sidebar {
-  margin-left: 15px;
-  width: 210px;
+  width: 30%;
+  padding:1em;
+  height:300px;
+  box-sizing: border-box;
 }
 #preview-content {
-  margin-left: 30px;
-  width: 26.5em;
+  height:300px;
+  padding:1em;
+  width: 70%;
+  box-sizing: border-box;
+  border-left: 1px solid #000;
 }
-#preview-sidebar .preview-block {
-  border: 1px solid;
-  margin: 20px 0;
-  padding: 15px 20px;
+#preview-node {
+  padding:1em;
+  border: 1px solid #000;
 }
 #preview-sidebar h2 {
-  border-bottom: 1px solid #d6d6d6;
   font-size: 1.071em;
   font-weight: normal;
   line-height: 1.2;
   margin: 0 0 0.5em;
   padding-bottom: 5px;
-  text-shadow: 0 1px 0 #fff;
 }
 #preview .preview-block .preview-content {
   margin-top: 1em;
@@ -111,8 +98,7 @@
   margin-top: 0;
 }
 #preview-main {
-  margin-bottom: 40px;
-  margin-top: 20px;
+  border-top: 1px solid #000;
 }
 #preview-page-title {
   font-size: 2em;

@@ -22,7 +22,6 @@ h1, h2 {
 .l-header, .header, header {
   color: #2a320d;
   background-color: #ffffff;
-  border-bottom: 1px solid #dcb316;
 }
 .l-sidebar, .radix-layouts-sidebar {
   background-color: #a7c629;
@@ -34,10 +33,10 @@ h1, h2 {
 .sidebar a,
 .l-sidebar a,
 .radix-layouts-sidebar a {
-  color: #2a320d;
+  color: #2a320e;
 }
 a {
-  color: #2a320d;
+  color: #2a320e;
 }
 a:hover,
 a:focus {
@@ -55,7 +54,9 @@ a:active {
   background: #292929;
 }
 .l-header a,
-.header a,
+.header a {
+  color: #2a320c;
+}
 .l-footer-wrapper,
 .l-footer {
   color: #2a320d;
@@ -68,9 +69,5 @@ main, .l-container {
 }
 article {
   background-color: #ffffff;
-  border: 1px solid #dcb316;
-}
-#forum {
-  background-color: #fff;    
   border: 1px solid #dcb316;
 }
